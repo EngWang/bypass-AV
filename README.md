@@ -48,9 +48,4 @@ Encodes and executes shellcode to test AV evasion, inspired by [EngWang/bypass-A
 - Test in a VM; AV may block execution.
 - Debug with x64dbg/Process Monitor if issues occur.
 
-## License
-MIT License. Use responsibly.
 
-## Disclaimer
-For authorized testing only. Authors are not liable for misuse.
-```
